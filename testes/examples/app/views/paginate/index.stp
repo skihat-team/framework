@@ -1,0 +1,8 @@
+<html lang="zh-cn">
+<head>
+    <title>Paginate</title>
+</head>
+<body>
+<?php print_r($this['guestbooks']->fetchObjects()); ?>
+</body>
+</html>

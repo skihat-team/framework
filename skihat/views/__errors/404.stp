@@ -1,0 +1,13 @@
+<?php $response->statusCode('404 not found page'); ?>
+<html>
+<head>
+    <title>404 Not found page</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+<h1>404 Not found page</h1>
+<p>
+    Sorry not found page,please retry。
+</p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype>
+<html lang="zh-cn">
+<head>
+    <title>Guest books</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+</head>
+<body>
+    <h1>Guest books Administrators</h1>
+    <?php $guestbooks = $this['guestbooks']->fetchObjects(); ?>
+    <ul>
+        <?php foreach ($guestbooks as $guestbook) { ?>
+        <li>[<?php echo $guestbook->user; ?>]<?php echo $guestbook->content; ?>
+            [<a href="/?package=admins&controller=guestbooks&action=delete&id=<?php echo $guestbook->id; ?>">删除</a>]
+        </li>
+        <?php } ?>
+    </ul>
+</body>
+</html>

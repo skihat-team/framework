@@ -1,0 +1,2 @@
+<?php $this->helpers('form'); ?>
+<?php $form = new Form($this); ?>

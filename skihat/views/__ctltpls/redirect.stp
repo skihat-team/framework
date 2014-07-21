@@ -1,0 +1,18 @@
+<?php $this->helpers('core'); ?>
+<?php
+$delay = intval($this['delay']);
+# 如果设置有消息，设置flash标识。
+flash_message($this);
+?>
+<?php if ($delay > 0) { ?>
+    <html>
+    <head>
+        <meta http-equiv="refresh" content="<?php echo $delay; ?>URL=<?php echo $this['url']; ?>"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    </head>
+    </html>
+<?php
+} else {
+    $response->statusCode('302');
+    $response->header('Location', $this['url']);
+} ?>

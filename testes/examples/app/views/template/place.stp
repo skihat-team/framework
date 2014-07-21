@@ -1,0 +1,8 @@
+<?php $this->layout('place'); ?>
+<?php $this->beginPlace('title'); ?>
+    Hello Skihat Example
+<?php $this->endPlace(); ?>
+<?php # beginPlace和endPlace之间不应当有任何输出代码 ?>
+<?php $this->beginPlace('body'); ?>
+    <h1>Hello Skihat Example</h1>
+<?php $this->endPlace(); ?>

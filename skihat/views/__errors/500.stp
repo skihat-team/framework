@@ -1,0 +1,26 @@
+<?php $response->statusCode(500); ?>
+<html>
+<head>
+    <title>500 Server error</title>
+</head>
+<body>
+<h1>500 Server error</h1>
+
+<p>
+    Sorry server error
+</p>
+<?php if (SKIHAT_DEBUG && $ex = $this['ex']) { ?>
+    <h3>Exception:</h3>
+    <ul>
+        <li><b>Message:</b> <?php echo $ex->getMessage(); ?></li>
+        <li><b>Line:</b> <?php echo $ex->getFile(); ?> at <?php echo $ex->getLine(); ?></li>
+    </ul>
+    <h3>Stack trace：</h3>
+    <ul>
+        <?php foreach ($ex->getTrace() as $trace) { ?>
+            <li><?php print_r($trace); ?></li>
+        <?php } ?>
+    </ul>
+<?php } ?>
+</body>
+</html>

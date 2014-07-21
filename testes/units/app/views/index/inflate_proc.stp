@@ -1,0 +1,1 @@
+<?php $this->inflateProc('sprintf', array('inflate_proc')); ?>

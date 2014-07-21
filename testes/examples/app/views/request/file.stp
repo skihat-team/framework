@@ -1,0 +1,14 @@
+<html lang="zn-cn">
+<head>
+    <title>Hello Skihat</title>
+</head>
+<body>
+<form enctype="multipart/form-data" action="/index.php?controller=request&action=file">
+    <input type="file" name="file"/>
+
+    <p>
+        <input type="submit" value="submit"/>
+    </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?php $this->helpers('core','paginate'); ?>
+<html lang="zh-cn">
+<head>
+    <title>Paginate Helper</title>
+</head>
+<body>
+<?php $guestbooks = $this['guestbooks']->fetchObjects(); ?>
+<ul>
+    <?php foreach ($guestbooks as $guestbook) { ?>
+        <li><?php _h($guestbook->content); ?>[<?php _nice_date_time($guestbook->created); ?></li>
+    <?php } ?>
+</ul>
+<div class="paginate">
+    <?php _paginate_numbers($this['guestbooks']); ?>
+</div>
+</body>
+</html>

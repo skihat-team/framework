@@ -1,0 +1,1 @@
+<?php $this->inflateFile('index.elems.inflate_file'); ?>

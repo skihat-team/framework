@@ -1,0 +1,8 @@
+<html lang="zh-CN">
+<head>
+    <title><?php $this->place('title','Skihat example'); ?></title>
+</head>
+<body>
+    <?php $this->place('body','body content'); ?>
+</body>
+</html>

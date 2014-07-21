@@ -1,0 +1,5 @@
+<?php $this->inflateProc(function ($text) {
+    echo 'Hello ', $text, ' time:', date(SKIHAT_I18N_DATE_TIME);
+}, array('Hello'), array(
+    Theme::OPT_CACHE => 'hello-skihat'
+));

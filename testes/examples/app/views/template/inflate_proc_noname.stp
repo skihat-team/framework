@@ -1,0 +1,3 @@
+<?php $this->inflateProc(function ($text) {
+    echo 'Hello ', $text;
+}, array('Skihat')); ?>

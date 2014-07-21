@@ -1,0 +1,2 @@
+<?php $this->layout('inflate'); ?>
+<?php $this->inflateProc('sprintf', array('inflate_proc_place'), 'default'); ?>

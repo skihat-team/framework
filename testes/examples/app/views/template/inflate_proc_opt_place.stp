@@ -1,0 +1,6 @@
+<?php $this->layout('place'); ?>
+<?php $this->inflateProc(function ($text) {
+    echo 'Hello ', $text;
+}, array('Skihat'), array(
+    Theme::OPT_PLACE => 'title'));
+?>

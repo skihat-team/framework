@@ -1,0 +1,2 @@
+<?php $this->layout('inflate'); ?>
+<?php $this->inflateText('inflate_text_place', 'default'); ?>

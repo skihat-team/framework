@@ -1,0 +1,8 @@
+<html lang="zh-cn">
+<head>
+    <title>Application Response</title>
+</head>
+<body>
+Application Response Current Time: <?php echo date(SKIHAT_I18N_DATE_TIME, time()); ?>
+</body>
+</html>
