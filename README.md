@@ -2,11 +2,6 @@
 
 Skihat is a MVC framework based on PHP 5.3+. It brings the features of security, log, trasaction, buffer/cache, database access, themes, etc.
 
-<<<<<<< HEAD
-Skihat 是一个基于 PHP 5.3 + 的高效 MVC 框架,提供安全、日志、事务、缓存、数据 库访问、主题等诸多特性。遵循自然、简洁的设计理念、强调实用性、鼓励模块化开发、遵 循约定优于配置的编程理念。
-=======
-We use the **convention over configuration** ( CoC ) pattern, to make it as simple as it is powerful.
->>>>>>> 973c62f03bd47fe290ccf07f66645e8fd3118a5a
 
 ## FEATURES
 
